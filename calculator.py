@@ -23,5 +23,5 @@ while is_running:
         is_running = False
         print("프로그램을 종료합니다.")
     else:
-        print(f"{first_number} {operation_char} {second_number} =", f_calculator(first_number,second_number,operation_char))
+        print(f"Result:", f_calculator(first_number,second_number,operation_char))
  
