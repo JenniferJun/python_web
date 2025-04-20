@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Results:</title>
+  </head>
+  <body>
+    <h1>Search result for "{{keyword}}"</h1>
+    {% for job in jobs %}
+    <div>
+      {{job.link}}
+      <span>{{job.position}}</span>
+      <span>{{job.compnay}}</span>
+      <span>{{job.location}}</span>
+      <a href="{{job.link}}">Apply now</a>
+    </div>
+    {% endfor %}
+  </body>
+</html>
